@@ -121,7 +121,7 @@ function confetti() {
     confetti = [];
 
   var runFor = 2000
-  var isRunning = true
+  var isRunning = true 
 
   setTimeout(() => {
     isRunning = false
