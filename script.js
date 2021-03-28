@@ -6,12 +6,12 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by');
 } else {
-  sender = "Dari bby mu reza";
+  sender = "Reza Noverian";
 }
 
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Assallamualaikum Sayangnyaa aku,comelnya aku", "Aku ada pertanyaan nih buat bby", "question").then(function () {
+  Swal.fire("Assallamualaikum Sayangnyaa aku,Cantiknya aku", "Ada pertanyaan nih buat bby", "question").then(function () {
     Swal.fire("Jawab jujur yaa sayangg").then(function () {
       Swal.fire("Awasss yaaa kalooo boong ntar dosa ", "", "error").then(function () {
 
