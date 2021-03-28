@@ -63,7 +63,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                     }).then((result) => {
                       /* Read more about isConfirmed, isDenied below */
                       if (result.isConfirmed) {
-                        Swal.fire(`Huhuhuhuhuhu iya, ${sender} juga kangen bangett samaaa ${nama} , makasihhh yaa :* :*`).then(function () {
+                        Swal.fire(`Huhuhuhuhuhu iya, ${sender} juga kangen bangett samaaa ${nama} , makasihhh yaa byy :* :*`).then(function () {
                           Swal.fire('Kali ini terakhir dehh :)').then(function () {
                             Swal.fire('Coba tolong klik ikon hati di paling bawah by')
                           })
