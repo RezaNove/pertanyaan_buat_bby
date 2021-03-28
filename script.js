@@ -6,32 +6,32 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by');
 } else {
-  sender = "Mamas Eja";
+  sender = "Dari bby mu reza";
 }
 
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Halo Sayangnyaa aku,comelnya akohh", "Aku punya pertanyaan nih byy", "question").then(function () {
+  Swal.fire("Assallamualaikum Sayangnyaa aku,comelnya aku", "Aku ada pertanyaan nih buat bby", "question").then(function () {
     Swal.fire("Jawab jujur yaa sayangg").then(function () {
       Swal.fire("Awasss yaaa kalooo boong ntar dosa ", "", "error").then(function () {
 
         const {
           value: name
         } = Swal.fire({
-          title: 'Isii Isi nama dulu yaa byy',
+          title: 'Pertama Isi nama dulu yaa by',
           input: 'text',
           inputLabel: '',
           showCancelButton: true,
           inputValidator: (value) => {
             if (!value) {
-              return 'isi duluu dongg byy :('
+              return 'isi duluu dongg by :('
             } else {
               nama = value;
             }
           }
         }).then(function () {
           const pertanyaan = Swal.fire({
-            title: `${nama} kamuu sayang ga sama ${sender}?`,
+            title: `${nama}Aku nanya kamu serius ngga by sayang sm aku..?  ${sender}?`,
             showDenyButton: true,
             showCancelButton: false,
             confirmButtonText: `Sayang bangett`,
@@ -41,10 +41,10 @@ document.querySelector(".tombol").addEventListener('click', function () {
             if (result.isConfirmed) {
               Swal.fire(`${sender} juga sayang banget sama ${nama}`).then(function () {
                 Swal.fire({
-                  title: 'Seberapa sayang emangnya?',
+                  title: 'Seberapa sayang emangnya by?',
                   icon: 'question',
                   input: 'range',
-                  inputLabel: 'Antara satu sampai seratus ya',
+                  inputLabel: 'Antara satu sampai seratus ya by',
                   inputAttributes: {
                     min: 1,
                     max: 100,
@@ -53,7 +53,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   inputValue: 50
                 }).then((e) => {
                   val = e.value
-                  Swal.fire(`Makasih banget ya byy udah sayang sama ${sender} ${val}%`).then(function () {
+                  Swal.fire(`Makasih bby udah sayang sama ${sender} ${val}%`).then(function () {
                     Swal.fire({
                       title: `Sekarang ${nama} kangen ga sama ${sender}?`,
                       showDenyButton: true,
@@ -63,9 +63,9 @@ document.querySelector(".tombol").addEventListener('click', function () {
                     }).then((result) => {
                       /* Read more about isConfirmed, isDenied below */
                       if (result.isConfirmed) {
-                        Swal.fire(`Huhuhuhuhuhu iya ${sender} juga kangen bangett samaaa ${nama} , makasihhh yaa :)`).then(function () {
+                        Swal.fire(`Huhuhuhuhuhu iya, ${sender} juga kangen bangett samaaa ${nama} , makasihhh yaa :* :*`).then(function () {
                           Swal.fire('Kali ini terakhir dehh :)').then(function () {
-                            Swal.fire('Coba tolong klik ikon hati di paling bawah dong')
+                            Swal.fire('Coba tolong klik ikon hati di paling bawah by')
                           })
                         })
                       } else if (result.isDenied) {
@@ -78,8 +78,8 @@ document.querySelector(".tombol").addEventListener('click', function () {
                 })
               })
             } else if (result.isDenied) {
-              Swal.fire(`Yakin kamu ga sayang sama ${sender}?`, '', 'error').then(function () {
-                Swal.fire('Ok deh :((')
+              Swal.fire(`Yakin kamu ga sayang sama ${sender} by...??`, '', 'error').then(function () {
+                Swal.fire('Ok deh nangis aja kali  :((')
               })
             }
           })
